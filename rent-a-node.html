@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png"/>
+    <!-- loader-->
+    <link href="assets/css/pace.min.css" rel="stylesheet"/>
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <title>Мои Ноды</title>
+</head>
+
+<body>
+<!--wrapper-->
+<div class="wrapper">
+    <!--start nav-->
+    <nav class="navbar py-0 navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bx bx-menu font-30"></i>
+            <!--<span class="navbar-toggler-icon"></span>-->
+        </button>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo-img.png" width="150" alt="DETAX"/></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-18">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">MY NODES</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">RENT A NODE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INVOICES
+                            <span class="badge bg-danger align-text-top badge-nav">1 unpaid</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--profile-->
+            <div class="user-box dropdown">
+                <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret px-0" href="#"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user-img">
+                        <span class="user-initials">PS</span>
+                        <img src="assets/images/avatars/avatar-2.png" alt="Pauline Seitz">
+                    </div>
+                    <div class="user-info ps-3">
+                        <p class="user-name mb-0">Pauline Seitz</p>
+
+                        <p class="designattion mb-0">Web Designer</p>
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border-secondary border-1">
+                    <li><a class="dropdown-item" href="#"><i class="bx bx-edit-alt"></i><span>Change Login</span></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="bx bx-reset"></i><span>Reset Password</span></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i
+                            class='bx bx-edit'></i><span>Change Telegram @UserName</span></a>
+                    </li>
+                    <li>
+                        <div class="dropdown-divider mb-0"></div>
+                    </li>
+                    <li><a class="dropdown-item" href="javascript:;"><i
+                            class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!--end profile-->
+        </div>
+    </nav>
+    <!--end nav-->
+    <!--start page wrapper -->
+    <div class="container">
+        <div class="page-content">
+            <!--breadcrumb-->
+            <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 p-0">
+                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">My Nodes</li>
+                    </ol>
+                </nav>
+            </div>
+            <!--end breadcrumb-->
+
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="mb-3">Data Center</h5>
+                            <form>
+                                <div role="radiogroup">
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option1">
+                                        <label class="form-check-label" for="option1">
+                                            All GEO'S
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option2">
+                                        <label class="form-check-label" for="option2">
+                                            Germany
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option3">
+                                        <label class="form-check-label" for="option3">
+                                            Finland
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <h5 class="mb-3">Node's Role</h5>
+                            <form>
+                                <div role="radiogroup">
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option4">
+                                        <label class="form-check-label" for="option4">
+                                            All roles
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option5">
+                                        <label class="form-check-label" for="option5">
+                                            Peer
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option6">
+                                        <label class="form-check-label" for="option6">
+                                            Verifer
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option7">
+                                        <label class="form-check-label" for="option7">
+                                            Infr Torrent
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option8">
+                                        <label class="form-check-label" for="option8">
+                                            Torrent
+                                        </label>
+                                    </div>
+                                    <div class="form-check mb-2" role="radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                               id="option9">
+                                        <label class="form-check-label" for="option9">
+                                            Core
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-9">
+
+                    <div class="card">
+                        <ul class="nav nav-pills justify-content-center font-20 mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Europe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">North America</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Asia</a>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="card shadow-none border radius-10">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline me-2">
+                                                            <i class="bx bx-planet text-info font-18"></i>
+                                                            <span class="align-text-bottom">Germany</span>
+                                                        </div>
+                                                        <div class="d-inline">
+                                                            <i class="bx bx-time text-danger font-18"></i>
+                                                            <span class="align-text-bottom">2500 aRPS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <h4>Starter Peer <span
+                                                                class="align-text-top badge bg-danger font-13 mt-1">Limited</span>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="font-14">Basic Node, up to 500Mbps</div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-2 font-12">Only up to 200 000 MHC stake</div>
+                                                    <div class="mb-3">
+                                                        <h3>$10 <span class="fw-normal">/ month</span></h3>
+                                                    </div>
+                                                    <div class="mt-2"><span class="text-info">$7</span> month,
+                                                        annual billing
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mt-4">
+                                                    <button type="button" class="btn btn-success"><i
+                                                            class="bx bxs-check-circle me-2"></i>Pre-order
+                                                    </button>
+                                                    <div class="mt-2 text-warning line-1 font-13">Out of stock, 7-28
+                                                        days pre-order
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-none border radius-10">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline me-2">
+                                                            <i class="bx bx-planet text-info font-18"></i>
+                                                            <span class="align-text-bottom">Germany</span>
+                                                        </div>
+                                                        <div class="d-inline">
+                                                            <i class="bx bx-time text-success font-18"></i>
+                                                            <span class="align-text-bottom">50 000 aRPS</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <h4>Top Peer</h4>
+                                                    </div>
+                                                    <div class="font-14">Basic Node, up to 500Mbps</div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-2 font-12">Only up to 200 000 MHC stake</div>
+                                                    <div class="mb-3">
+                                                        <h3>$49 <span class="fw-normal">/ month</span></h3>
+                                                    </div>
+                                                    <div class="mt-2"><span class="text-info">$49</span> month,
+                                                        annual billing
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mt-4">
+                                                    <button type="button" class="btn btn-success"><i
+                                                            class="bx bxs-check-circle me-2"></i>Pre-order
+                                                    </button>
+                                                    <div class="mt-2 text-warning line-1 font-13">Out of stock, 7-28
+                                                        days pre-order
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-none border radius-10">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline me-2">
+                                                            <i class="bx bx-planet text-info font-18"></i>
+                                                            <span class="align-text-bottom">Germany</span>
+                                                        </div>
+                                                        <div class="d-inline">
+                                                            <i class="bx bx-time text-success font-18"></i>
+                                                            <span class="align-text-bottom">50 000 aRPS</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <h4>Top Peer</h4>
+                                                    </div>
+                                                    <div class="font-14">Basic Node, up to 500Mbps</div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-2 font-12">Only up to 200 000 MHC stake</div>
+                                                    <div class="mb-3">
+                                                        <h3>$49 <span class="fw-normal">/ month</span></h3>
+                                                    </div>
+                                                    <div class="mt-2"><span class="text-info">$49</span> month,
+                                                        annual billing
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mt-4">
+                                                    <button type="button" class="btn btn-success"><i
+                                                            class="bx bxs-check-circle me-2"></i>Pre-order
+                                                    </button>
+                                                    <div class="mt-2 text-warning line-1 font-13">Out of stock, 7-28
+                                                        days pre-order
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-none border radius-10">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline me-2">
+                                                            <i class="bx bx-planet text-info font-18"></i>
+                                                            <span class="align-text-bottom">Germany</span>
+                                                        </div>
+                                                        <div class="d-inline">
+                                                            <i class="bx bx-time text-warning font-18"></i>
+                                                            <span class="align-text-bottom">20 000 aRPS</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <h4>Peer</h4>
+                                                    </div>
+                                                    <div class="font-14">Moderate perfomance, up to 1Gbps</div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-2 font-12">Only up to 200 000 MHC stake</div>
+                                                    <div class="mb-3">
+                                                        <h3>$25 <span class="fw-normal">/ month</span></h3>
+                                                    </div>
+                                                    <div class="mt-2"><span class="text-info">$16</span> month,
+                                                        annual billing
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mt-4">
+                                                    <button type="button" class="btn btn-success"><i
+                                                            class="bx bxs-check-circle me-2"></i>Pre-order
+                                                    </button>
+                                                    <div class="mt-2 text-warning line-1 font-13">Delivery time 48h
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card shadow-none border radius-10">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="mb-2">
+                                                        <div class="d-inline me-2">
+                                                            <i class="bx bx-planet text-info font-18"></i>
+                                                            <span class="align-text-bottom">Germany</span>
+                                                        </div>
+                                                        <div class="d-inline">
+                                                            <i class="bx bx-time text-primary font-18"></i>
+                                                            <span class="align-text-bottom">20 000 aRPS</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <h4>Basic Peer</h4>
+                                                    </div>
+                                                    <div class="font-14">Basic perfomance, up to 500Mbps</div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-2 font-12">Only up to 200 000 MHC stake</div>
+                                                    <div class="mb-3">
+                                                        <h3>$16 <span class="fw-normal">/ month</span></h3>
+                                                    </div>
+                                                    <div class="mt-2"><span class="text-info">$12</span> month,
+                                                        annual billing
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 mt-4">
+                                                    <button type="button" class="btn btn-success"><i
+                                                            class="bx bxs-check-circle me-2"></i>Pre-order
+                                                    </button>
+                                                    <div class="mt-2 text-warning line-1 font-13">Delivery time 48h
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end row-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end page wrapper -->
+    <footer class="page-footer">
+        <p class="mb-0">Copyright © 2021. All right reserved.</p>
+    </footer>
+</div>
+<!--end wrapper-->
+<!-- telegram button -->
+<a href="#" class="telegram-btn" data-bs-toggle="modal" data-bs-target="#telegramModal">
+    <i class="bx bxl-telegram"></i>
+</a>
+<!-- Modal -->
+<div class="modal fade" id="telegramModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Personal Manager Telegram</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><a href="#" class="font-50 fw-bolder">@leloush</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Modal -->
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--Jquery-->
+<script src="assets/js/jquery.min.js"></script>
+<!--app JS-->
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>

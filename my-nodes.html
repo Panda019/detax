@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png"/>
+    <!-- loader-->
+    <link href="assets/css/pace.min.css" rel="stylesheet"/>
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <title>Synadmin – Bootstrap5 Admin Template</title>
+</head>
+<body>
+<!--wrapper-->
+<div class="wrapper">
+    <!--start nav-->
+    <nav class="navbar py-0 navbar-expand-lg navbar-light bg-white">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bx bx-menu font-30"></i>
+            <!--<span class="navbar-toggler-icon"></span>-->
+        </button>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo-img.png" width="150" alt="DETAX"/></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-18">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">MY NODES</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">RENT A NODE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INVOICES
+                            <span class="badge bg-danger align-text-top badge-nav">1 unpaid</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--profile-->
+            <div class="user-box dropdown">
+                <a class="d-flex align-items-center nav-link dropdown-toggle dropdown-toggle-nocaret px-0" href="#"
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="user-img">
+                        <span class="user-initials">PS</span>
+                        <img src="assets/images/avatars/avatar-2.png" alt="Pauline Seitz">
+                    </div>
+                    <div class="user-info ps-3">
+                        <p class="user-name mb-0">Pauline Seitz</p>
+
+                        <p class="designattion mb-0">Web Designer</p>
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end border-secondary border-1">
+                    <li><a class="dropdown-item" href="#"><i class="bx bx-edit-alt"></i><span>Change Login</span></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="bx bx-reset"></i><span>Reset Password</span></a>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i
+                            class='bx bx-edit'></i><span>Change Telegram @UserName</span></a>
+                    </li>
+                    <li>
+                        <div class="dropdown-divider mb-0"></div>
+                    </li>
+                    <li><a class="dropdown-item" href="javascript:;"><i
+                            class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!--end profile-->
+        </div>
+    </nav>
+    <!--end nav-->
+    <!--start page wrapper -->
+    <div class="container">
+        <div class="page-content">
+            <!--breadcrumb-->
+            <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 p-0">
+                        <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
+                        </li>
+
+                        <li class="breadcrumb-item active" aria-current="page">Edit "My Awesome Node 1"</li>
+                    </ol>
+                </nav>
+                <div class="ms-auto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Show suspended Nodes</label>
+                    </div>
+                </div>
+            </div>
+            <!--end breadcrumb-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row mt-3">
+                                <div class="col-12 col-lg-12">
+                                    <h6>192.168.1.1 <i class="bx bx-copy-alt text-primary font-20"></i></h6>
+                                    <h3>My Awesome Node 1</h3>
+                                    <p class="text-success">﻿0x0038b12b0fafdc0ec523e3059882daf56fc3b3f6932a527987</p>
+                                    <div class="row">
+                                        <div class="col-lg-6 overflow-auto">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th scope="col" colspan="2">Specifications</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">GEO</th>
+                                                    <td>Kansas, USA [<a href="#"> change </a>]</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Type</th>
+                                                    <td>Core [<a href="#"> change </a>]</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Trust</th>
+                                                    <td>1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Node capital</th>
+                                                    <td>37 843 743 #MHC</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-6 overflow-auto">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th scope="col" colspan="2">Status</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">Status</th>
+                                                    <td>
+                                                        <i class="bx bx-disc text-success font-20 float-start me-1"></i>
+                                                        Active [<a href="#"> change </a>]
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Perfomance</th>
+                                                    <td>
+                                                        <i class="bx bx-tachometer text-danger font-20 float-start me-1"></i>
+                                                        Low [<a href="#">
+                                                        upgrade </a>]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Renewal date</th>
+                                                    <td>01.05.2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Cost</th>
+                                                    <td>$25 / month [<a href="#"> 1 invoice </a>]</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <h6 class="mb-4">192.168.1.1 <i class="bx bx-copy-alt text-primary font-20"></i>
+                                    </h6>
+
+                                    <h3>My Awesome Node 2</h3>
+
+                                    <p class="text-success">﻿0x0038b12b0fafdc0ec523e3059882daf56fc3b3f6932a527987</p>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 overflow-auto">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th scope="col" colspan="2">Specifications</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">GEO</th>
+                                                    <td>Kansas, USA [<a href="#"> change </a>]</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Type</th>
+                                                    <td>Core [<a href="#"> change </a>]</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Trust</th>
+                                                    <td>1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Node capital</th>
+                                                    <td>37 843 743 #MHC</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-6 overflow-auto">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th scope="col" colspan="2">Status</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">Status</th>
+                                                    <td>
+                                                        <i class="bx bx-tachometer text-success font-20 float-start me-1"></i>
+                                                        High [<a href="#">
+                                                        change </a>]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Perfomance</th>
+                                                    <td><i class="bx bx-disc text-warning font-20 float-start me-1"></i>
+                                                        Pending
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Renewal date</th>
+                                                    <td>01.05.2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Cost</th>
+                                                    <td>$25 / annual</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <h6 class="mb-4">192.168.1.1 <i class="bx bx-copy-alt text-primary font-20"></i>
+                                    </h6>
+
+                                    <h3>My Awesome Node 3</h3>
+
+                                    <p class="text-success">﻿0x0038b12b0fafdc0ec523e3059882daf56fc3b3f6932a527987</p>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 overflow-auto">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th scope="col" colspan="2">Specifications</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">GEO</th>
+                                                    <td>Kansas, USA [<a href="#"> change </a>]</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Type</th>
+                                                    <td>Core [<a href="#"> change </a>]</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Trust</th>
+                                                    <td>1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Node capital</th>
+                                                    <td>37 843 743 #MHC</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-6 overflow-auto">
+                                            <table class="table table-bordered">
+                                                <thead class="bg-primary text-white">
+                                                <tr>
+                                                    <th scope="col" colspan="2">Status</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">Status</th>
+                                                    <td>
+                                                        <i class="bx bx-tachometer font-20 float-start me-1 text-success"></i>
+                                                        Moderate [<a href="#">
+                                                        upgrade </a>]
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Perfomance</th>
+                                                    <td><i class="bx bx-disc font-20 float-start me-1 text-danger"></i>
+                                                        Suspend
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Renewal date</th>
+                                                    <td>01.05.2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Cost</th>
+                                                    <td>$25 / month [<a href="#"> 1 invoice </a>]</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<!--end page wrapper -->
+<footer class="page-footer">
+    <p class="mb-0">Copyright © 2021. All right reserved.</p>
+</footer>
+</div>
+<!--end wrapper-->
+<!-- telegram button -->
+<a href="#" class="telegram-btn" data-bs-toggle="modal" data-bs-target="#telegramModal">
+    <i class="bx bxl-telegram"></i>
+</a>
+<!-- Modal -->
+<div class="modal fade" id="telegramModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Personal Manager Telegram</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><a href="#" class="font-50 fw-bolder">@leloush</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Modal -->
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--Jquery-->
+<script src="assets/js/jquery.min.js"></script>
+<!--app JS-->
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>

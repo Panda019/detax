@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png"/>
+    <!-- loader-->
+    <link href="assets/css/pace.min.css" rel="stylesheet"/>
+    <script src="assets/js/pace.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <title>Изменить аккаунт Телеграм</title>
+</head>
+
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+    <div class="authentication-header"></div>
+    <div class="authentication-reset-password d-flex align-items-center justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="card-body">
+                            <div class="p-4">
+                                <div class="text-center">
+                                    <img src="assets/images/logo-img.png" width="200" alt="DETAX">
+                                </div>
+                                <h4 class="mt-5 font-weight-bold">Change Telegram UserName</h4>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Old UserName</label>
+                                    <input type="text" class="form-control" placeholder="@UserName"/>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">New UserName</label>
+                                    <input type="text" class="form-control" placeholder="@NewUserName"/>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Password</label>
+
+                                    <div class="input-group" id="show_hide_password">
+                                        <input type="password" class="form-control border-end-0"
+                                               id="inputChoosePassword" value="12345678"
+                                               placeholder="Enter Password"> <a href="javascript:;"
+                                                                                class="input-group-text bg-transparent"><i
+                                            class='bx bx-hide'></i></a>
+                                    </div>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn btn-primary"><i class="bx bx-edit mr-1"></i>Change
+                                    </button>
+                                    <a href="authentication-login.html" class="mt-3"><i
+                                            class='bx bx-arrow-back mr-1'></i>Back to Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end wrapper -->
+<!-- telegram button -->
+<a href="#" class="telegram-btn" data-bs-toggle="modal" data-bs-target="#telegramModal">
+    <i class="bx bxl-telegram"></i>
+</a>
+<!-- Modal -->
+<div class="modal fade" id="telegramModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Personal Manager Telegram</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><a href="#" class="font-50 fw-bolder">@leloush</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end Modal -->
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--Jquery-->
+<script src="assets/js/jquery.min.js"></script>
+<!--app JS-->
+<script src="assets/js/app.js"></script>
+<!--Password show & hide js -->
+<script>
+    $(document).ready(function () {
+        $("#show_hide_password a").on('click', function (event) {
+            event.preventDefault();
+            if ($('#show_hide_password input').attr("type") == "text") {
+                $('#show_hide_password input').attr('type', 'password');
+                $('#show_hide_password i').addClass("bx-hide");
+                $('#show_hide_password i').removeClass("bx-show");
+            } else if ($('#show_hide_password input').attr("type") == "password") {
+                $('#show_hide_password input').attr('type', 'text');
+                $('#show_hide_password i').removeClass("bx-hide");
+                $('#show_hide_password i').addClass("bx-show");
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
